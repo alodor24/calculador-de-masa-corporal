@@ -9,19 +9,33 @@
     </head>
     
     <body>
-        <h1>Calcular IMC (Índice de Masa Corporal)</h1>
-        
-        <label>Ingresa tu peso</label>
-        <br>
-        <input id="peso" type="text" placeholder="Peso kg">
-        <br><br>
-        <label>Ingresa tu estatura</label>
-        <br>
-        <input id="estatura" type="text" placeholder="Estatura cm">
-        <br><br>
-        <button id="calcular">Calcular</button>
-        
-        <h2>IMC: <span id="resultado"></span></h2>
+        <section class="container">
+            <h1 class="text-center">Calcular IMC (Índice de Masa Corporal)</h1>
+            
+            <div class="row justify-content-center">
+                <div class="col-sm-4 container-form">
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Ingresa tu peso</label>
+                            <input id="peso" type="text" class="form-control" placeholder="Peso en kg" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Ingresa tu estatura</label>
+                            <input id="estatura" type="text" class="form-control" placeholder="Estatura en cm" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="container-resultado">
+                    <h2>IMC: <span id="resultado"></span></h2>
+                </div>                
+            </div>
+        </section>
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
