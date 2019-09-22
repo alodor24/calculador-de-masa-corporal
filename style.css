@@ -1,0 +1,29 @@
+body {
+    background-color: #eaecee;
+}
+
+h1 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+.container-form {
+    background-color: #fff;
+    padding: 25px;
+    margin: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    margin-bottom: 25px;
+}
+
+.container-resultado {
+    background-color: #8e44ad;
+    padding: 12px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+}
+
+.container-resultado h2 {
+    color: #fff;    
+}
