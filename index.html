@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <section class="container">
+        <section id="app" class="container">
             <h1 class="text-center">Calcular IMC (Índice de Masa Corporal)</h1>
             
             <div class="row justify-content-center">
@@ -17,14 +17,14 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label>Ingresa tu peso</label>
-                            <input id="peso" type="text" class="form-control" placeholder="Peso en kg" required>
+                            <input type="text" class="form-control" placeholder="Peso en kg" v-model="peso">
                         </div>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label>Ingresa tu estatura</label>
-                            <input id="estatura" type="text" class="form-control" placeholder="Estatura en cm" required>
+                            <input type="text" class="form-control" placeholder="Estatura en cm" v-model="estatura">
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
             
             <div class="row justify-content-center">
                 <div class="container-resultado">
-                    <h2>IMC: <span id="resultado"></span></h2>
+                    <h2>IMC: <span>{{ calcular }}</span></h2>
                 </div>                
             </div>
         </section>
